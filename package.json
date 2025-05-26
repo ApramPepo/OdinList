@@ -4,6 +4,9 @@
   "description": "A To-do app for the Odin Project practice.",
   "main": "webpack.config.js",
   "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve",
+    "deploy": "git subtree push --prefix dist origin deployment",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
