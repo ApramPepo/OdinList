@@ -15,22 +15,22 @@ module.exports = {
         static: path.resolve(__dirname, "dist"),
         hot: true,
         open:true,
-        port: 8080,
+        port: 9000,
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/template.html",
         }),
     ],
-    moduel: {
+    module: {
         rules: [
-            {
-                test: /\.css$/,
-                use: ["style-loader", "css-loader"],
-            },
             {
                 test: /\.html$/,
                 use: "html-loader",
+            },
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"],
             },
         ],
     },
