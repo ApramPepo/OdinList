@@ -13,4 +13,4 @@ class Todos {
     }
 }
 
-export default Todos;
+module.exports = Todos;
