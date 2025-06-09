@@ -1,12 +1,16 @@
-const todos = () => {
-    const items = function(title, description, priority, dueDate, notes, checkList) {
-        let item = {};
-        item.title = title;
-        item.description = description;
-        item.priority = priority;
-        item.dueDate = dueDate;
-        item.notes = notes;
-        item.checkList = checkList;
+class Todos {
+    constructor(title, description, priority, dueDate, notes, checkList) {
+        this.title = title;
+        this.description = description;
+        this.priority = priority;
+        this.dueDate = dueDate;
+        this.notes = notes;
+        this.complete = false;
     }
 
+    ifCompleted() {
+        this.complete = !this.complete;
+    }
 }
+
+export default Todos;
