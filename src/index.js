@@ -1,4 +1,4 @@
 require("./main.css");
-const todos = require("./todos.js");
+const todos = require("./Modules/todos.js");
 
 console.log("test");
