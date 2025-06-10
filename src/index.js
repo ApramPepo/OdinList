@@ -1,4 +1,7 @@
 require("./main.css");
 const todos = require("./Modules/todos.js");
 
-task = new todos()
+task = new todos("buy milk", "Make sure to buy milk", 1, Date.now, "non", 0)
+task.ifCompleted(true);
+
+console.log(task);
