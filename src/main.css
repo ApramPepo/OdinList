@@ -7,8 +7,32 @@ body {
     background-color: white;
 }
 
-#container {
+body {
+    display: grid;
+}
+
+#bar {
     display: flex;
     flex-direction: column;
-    
+    padding: 2rem;
+    height: 100vw;
+}
+
+#bar>nav {
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    gap: 2ch;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-size: large;
+
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
 }
