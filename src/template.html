@@ -7,19 +7,24 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <section id="bar">
-        <nav>
-            <button>lol</button>
-            <button>lol</button>
-            <button>lol</button>
-            <button>lol</button>
-        </nav>
-    </section>
-    <main id="main">
-        <p>lol</p>
-        <p>lol</p>
-        <p>lol</p>
-        <p>lol</p>
+    <main>
+        <form id="todo-form">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="description" placeholder="Description">
+            <input type="date" id="dueDate" required>
+            <select id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <select id="project">
+ 
+            </select>
+            <input type="text" id="notes" placeholder="Notes">
+            <button type="submit">Add Todo</button>
+        </form>
+        <div id="projects"></div>
+        <div id="todos"></div>
     </main>
 </body>
 </html>

@@ -1,16 +1,16 @@
 const Storage = {
-    save(data) {
+    save: function (data) {
         localStorage.setItem("TodoApp", JSON.stringify(data));
     },
 
-    load() {
+    load: function () {
         const data = localStorage.getItem("TodoApp");
-        return data ? JSON.parse(data): null;
-    }, 
+        return data ? JSON.parse(data) : null;
+    },
 
-    clear() {
+    clear: function () {
         localStorage.removeItem("TodoApp");
     }
-}
+};
 
 module.exports = Storage;
